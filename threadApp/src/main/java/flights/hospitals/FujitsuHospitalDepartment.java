@@ -43,7 +43,7 @@ public class FujitsuHospitalDepartment {
                     Thread.sleep(6000);
                     TestingDepartment.status=false;                                                                     //zmiana pola status (przerwanie 2 petli while w klasie TestingDepartment)
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    System.out.println("Administrator przerwal pobieranie danych");
                 }
 
                 sickPeoples = TestingDepartment.getQueue().size();
