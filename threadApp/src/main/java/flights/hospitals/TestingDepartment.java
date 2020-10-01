@@ -12,7 +12,7 @@ import java.util.concurrent.BlockingQueue;
  */
 public class TestingDepartment {
 
-    private static BlockingQueue<Boolean> queue = new ArrayBlockingQueue<>(10000);
+    private static BlockingQueue<Boolean> queue = new ArrayBlockingQueue<>(100);
 
     public static volatile Boolean status=true;
 
