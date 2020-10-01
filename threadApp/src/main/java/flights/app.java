@@ -12,14 +12,10 @@ import flights.airports.parisAirport.flightsReceivingDepartment.ParisFlightContr
 import flights.airports.warsawAirport.flightsCreatingDepartment.WarsawFlightsCreator;
 import flights.airports.warsawAirport.flightsReceivingDepartment.WarsawFlightControl;
 import flights.hospitals.FujitsuHospitalDepartment;
-import flights.hospitals.TestingDepartment;
 import flights.who.CovidDepartment;
 
 import java.util.concurrent.*;
 
-//Producer Consumer -> BlockingQueue queue = ArrayBlockingQueue -> lista ktora nie jest dzielona przez watki (chroniona)
-
-//w forze dodawaj do queue losowe true lub false na produce consume to zrob
 public class app {
 
     public static CountDownLatch openLatch;
