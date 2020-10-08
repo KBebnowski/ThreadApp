@@ -3,7 +3,7 @@
 
 package flights.who;
 
-import flights.app;
+import flights.App;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -39,7 +39,7 @@ public class CovidDepartment {
                     check = scanner.next();
                     check = check.toLowerCase();
                 if("tak".equals(check)){
-                    app.setLockdown(true);
+                    App.setLockdown(true);
                     System.out.println("Lotniska zostaly zamkniete \n");
                     break;
                 }else if ("nie".equals(check)){
