@@ -7,7 +7,7 @@ package flights.airports;
 
 import flights.FlightCenter;
 import flights.airplaneService.AirplaneService;
-import flights.app;
+import flights.App;
 
 import java.util.Random;
 
@@ -23,7 +23,7 @@ public class FlightsCreator {
         airplane.setDepartureTime((System.currentTimeMillis()+airplane.getFlightTime()));   //przypisanie czasu przylotu
 
         FlightCenter.sendOut(airplane);                                                     //wywolanie metody, ktora stworzy osobny obiekt dla kazdego lotu
-        app.open();                                                                         //wywolanie closeLatch.countDown()
+        App.open();                                                                         //wywolanie closeLatch.countDown()
     }
 
     private static long getTime(){

@@ -49,7 +49,7 @@ public abstract class AbstractFlightControl {
                 } catch (IndexOutOfBoundsException e) {
 
                     FlightCenter.lockForClose.lock();
-                    app.close();
+                    App.close();
                     FlightCenter.lockForClose.unlock();
                     break;
                 }

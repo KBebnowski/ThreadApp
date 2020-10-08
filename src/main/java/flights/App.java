@@ -16,7 +16,7 @@ import flights.who.CovidDepartment;
 
 import java.util.concurrent.*;
 
-public class app {
+public class App {
 
     public static CountDownLatch openLatch;
     public static CountDownLatch closeLatch;
@@ -155,7 +155,7 @@ public class app {
     }
 
     public static void setLockdown(boolean lockdown) {
-        app.lockdown = lockdown;
+        App.lockdown = lockdown;
     }
 
 

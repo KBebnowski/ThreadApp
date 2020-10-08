@@ -2,7 +2,7 @@
 
 package flights.hospitals;
 
-import flights.app;
+import flights.App;
 
 import java.util.Scanner;
 import java.util.concurrent.*;
@@ -65,7 +65,7 @@ public class FujitsuHospitalDepartment {
                 if(answer.equals("1")){
                     System.out.println("Nie anulowano");
                     try {
-                        app.loadingScreen();
+                        App.loadingScreen();
                         Thread.sleep(4000);
                         System.out.println("Ilosc osob u ktorych stwierdzono covid - " + future.get());
                     } catch (InterruptedException e) {
